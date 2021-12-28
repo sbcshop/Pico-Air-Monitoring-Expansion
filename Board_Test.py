@@ -23,6 +23,7 @@ oled.fill(0)
 # ---------------------------------------------------------------------------
 def read_value(sensor):
     oled.fill(0)
+    time.sleep(2)                                       # sleep for 2 seconds
     """Read a sensor value and store it in the database."""
     # Read the value from the sensor.
     reading = sensor.read()
